@@ -1,14 +1,10 @@
-package derohimat.mvpandroid.ui.base;
+package net.derohimat.mvpandroid.ui.base;
 
-/**
- * Created by mohak on 13/5/17.
- */
-
+import net.derohimat.mvpandroid.data.datamanager.DataManager;
 
 import javax.inject.Inject;
 
 import io.reactivex.disposables.CompositeDisposable;
-import derohimat.mvpandroid.data.datamanager.DataManager;
 
 /**
  * Base class that implements the Presenter interface and provides a base implementation for

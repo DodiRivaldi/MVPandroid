@@ -1,4 +1,9 @@
-package derohimat.mvpandroid.data.datamanager.network;
+package net.derohimat.mvpandroid.data.datamanager.network;
+
+import net.derohimat.mvpandroid.data.model.TvModelResult;
+import net.derohimat.mvpandroid.data.model.TvShowDetail;
+import net.derohimat.mvpandroid.di.scopes.ApplicationScope;
+import net.derohimat.mvpandroid.utils.Constants;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,15 +11,7 @@ import java.util.Map;
 import javax.inject.Inject;
 
 import io.reactivex.Observable;
-import derohimat.mvpandroid.data.model.TvModelResult;
-import derohimat.mvpandroid.data.model.TvShowDetail;
-import derohimat.mvpandroid.di.scopes.ApplicationScope;
-import derohimat.mvpandroid.utils.Constants;
 import retrofit2.Response;
-
-/**
- * Created by mohak on 26/5/17.
- */
 
 @ApplicationScope
 public class AppNetworkManager implements NetworkHelper {

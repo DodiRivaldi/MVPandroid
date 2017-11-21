@@ -1,13 +1,9 @@
-package derohimat.mvpandroid.data.model;
+package net.derohimat.mvpandroid.data.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
-
-/**
- * Created by mohak on 4/6/17.
- */
 
 public class TvModelResult implements Parcelable {
 

@@ -1,4 +1,4 @@
-package derohimat.mvpandroid.ui.base;
+package net.derohimat.mvpandroid.ui.base;
 
 import android.content.Context;
 import android.content.Intent;
@@ -16,27 +16,18 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import net.derohimat.mvpandroid.R;
+import net.derohimat.mvpandroid.data.model.TvModel;
+import net.derohimat.mvpandroid.di.components.ActivityComponent;
+import net.derohimat.mvpandroid.ui.CommonFragmentAdapter;
+import net.derohimat.mvpandroid.ui.detail.DetailActivity;
+import net.derohimat.mvpandroid.utils.Constants;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
-import derohimat.mvpandroid.R;
-import derohimat.mvpandroid.data.model.TvModel;
-import derohimat.mvpandroid.di.components.ActivityComponent;
-import derohimat.mvpandroid.ui.CommonFragmentAdapter;
-import derohimat.mvpandroid.ui.detail.DetailActivity;
-import derohimat.mvpandroid.utils.Constants;
-
-
-/**
- * Created by mohak on 13/5/17.
- */
-
-/**
- * A simple {@link Fragment} subclass.
- **/
 
 public abstract class BaseFragment extends Fragment implements BaseMvpView, SwipeRefreshLayout.OnRefreshListener, CommonFragmentAdapter.ImageClickListener {
-
 
     private OnFragmentInteractionListener mListener;
 
@@ -46,7 +37,6 @@ public abstract class BaseFragment extends Fragment implements BaseMvpView, Swip
     public BaseFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public void onAttach(Context context) {
@@ -58,7 +48,6 @@ public abstract class BaseFragment extends Fragment implements BaseMvpView, Swip
                     + " must implement OnFragmentInteractionListener");
         }
     }
-
 
     @BindView(R.id.grid_view)
     public GridView gridView;

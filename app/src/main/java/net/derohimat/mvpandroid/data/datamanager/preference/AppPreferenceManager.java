@@ -1,19 +1,15 @@
-package derohimat.mvpandroid.data.datamanager.preference;
+package net.derohimat.mvpandroid.data.datamanager.preference;
 
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import net.derohimat.mvpandroid.di.qualifiers.ApplicationContext;
+import net.derohimat.mvpandroid.di.qualifiers.PrefFile;
+import net.derohimat.mvpandroid.di.scopes.ApplicationScope;
+import net.derohimat.mvpandroid.utils.Constants;
+
 import javax.inject.Inject;
-
-import derohimat.mvpandroid.di.qualifiers.ApplicationContext;
-import derohimat.mvpandroid.di.qualifiers.PrefFile;
-import derohimat.mvpandroid.di.scopes.ApplicationScope;
-import derohimat.mvpandroid.utils.Constants;
-
-/**
- * Created by mohak on 26/5/17.
- */
 
 @ApplicationScope
 public class AppPreferenceManager implements PreferenceHelper {

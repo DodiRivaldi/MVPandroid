@@ -1,9 +1,4 @@
-package derohimat.mvpandroid.ui.base;
-
-/**
- * Created by mohak on 13/5/17.
- */
-
+package net.derohimat.mvpandroid.ui.base;
 
 /**
  * Every presenter in the app must either implement this interface or extend BasePresenter

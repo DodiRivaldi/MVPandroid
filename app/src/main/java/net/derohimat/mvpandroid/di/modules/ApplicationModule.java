@@ -1,24 +1,21 @@
-package derohimat.mvpandroid.di.modules;
+package net.derohimat.mvpandroid.di.modules;
 
 import android.content.Context;
 
+import net.derohimat.mvpandroid.MvpAndroid;
+import net.derohimat.mvpandroid.data.datamanager.AppDataManager;
+import net.derohimat.mvpandroid.data.datamanager.DataManager;
+import net.derohimat.mvpandroid.data.datamanager.network.AppNetworkManager;
+import net.derohimat.mvpandroid.data.datamanager.network.NetworkHelper;
+import net.derohimat.mvpandroid.data.datamanager.preference.AppPreferenceManager;
+import net.derohimat.mvpandroid.data.datamanager.preference.PreferenceHelper;
+import net.derohimat.mvpandroid.di.qualifiers.ApplicationContext;
+import net.derohimat.mvpandroid.di.qualifiers.PrefFile;
+import net.derohimat.mvpandroid.di.scopes.ApplicationScope;
+import net.derohimat.mvpandroid.utils.Constants;
+
 import dagger.Module;
 import dagger.Provides;
-import derohimat.mvpandroid.MvpAndroid;
-import derohimat.mvpandroid.data.datamanager.AppDataManager;
-import derohimat.mvpandroid.data.datamanager.DataManager;
-import derohimat.mvpandroid.data.datamanager.network.AppNetworkManager;
-import derohimat.mvpandroid.data.datamanager.network.NetworkHelper;
-import derohimat.mvpandroid.data.datamanager.preference.AppPreferenceManager;
-import derohimat.mvpandroid.data.datamanager.preference.PreferenceHelper;
-import derohimat.mvpandroid.di.qualifiers.ApplicationContext;
-import derohimat.mvpandroid.di.qualifiers.PrefFile;
-import derohimat.mvpandroid.di.scopes.ApplicationScope;
-import derohimat.mvpandroid.utils.Constants;
-
-/**
- * Created by mohak on 19/5/17.
- */
 
 @Module
 public class ApplicationModule {

@@ -1,13 +1,10 @@
-package derohimat.mvpandroid.data.datamanager.network;
+package net.derohimat.mvpandroid.data.datamanager.network;
+
+import net.derohimat.mvpandroid.data.model.TvModelResult;
+import net.derohimat.mvpandroid.data.model.TvShowDetail;
 
 import io.reactivex.Observable;
-import derohimat.mvpandroid.data.model.TvModelResult;
-import derohimat.mvpandroid.data.model.TvShowDetail;
 import retrofit2.Response;
-
-/**
- * Created by mohak on 26/5/17.
- */
 
 public interface NetworkHelper {
 

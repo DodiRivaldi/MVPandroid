@@ -1,8 +1,4 @@
-package derohimat.mvpandroid.data.datamanager.preference;
-
-/**
- * Created by mohak on 26/5/17.
- */
+package net.derohimat.mvpandroid.data.datamanager.preference;
 
 public interface PreferenceHelper {
 

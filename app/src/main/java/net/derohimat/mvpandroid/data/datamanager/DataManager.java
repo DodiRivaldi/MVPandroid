@@ -13,14 +13,10 @@
  * limitations under the License
  */
 
-package derohimat.mvpandroid.data.datamanager;
+package net.derohimat.mvpandroid.data.datamanager;
 
-import derohimat.mvpandroid.data.datamanager.network.NetworkHelper;
-import derohimat.mvpandroid.data.datamanager.preference.PreferenceHelper;
-
-/**
- * Created by mohak on 26/5/17.
- */
+import net.derohimat.mvpandroid.data.datamanager.network.NetworkHelper;
+import net.derohimat.mvpandroid.data.datamanager.preference.PreferenceHelper;
 
 public interface DataManager extends PreferenceHelper, NetworkHelper {
 

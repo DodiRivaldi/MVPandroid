@@ -1,4 +1,4 @@
-package derohimat.mvpandroid.ui.base;
+package net.derohimat.mvpandroid.ui.base;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -9,15 +9,10 @@ import android.support.annotation.StringRes;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 
-import derohimat.mvpandroid.MvpAndroid;
-import derohimat.mvpandroid.di.components.ActivityComponent;
-import derohimat.mvpandroid.di.components.DaggerActivityComponent;
-import derohimat.mvpandroid.di.modules.ActivityModule;
-
-
-/**
- * Created by mohak on 13/5/17.
- */
+import net.derohimat.mvpandroid.MvpAndroid;
+import net.derohimat.mvpandroid.di.components.ActivityComponent;
+import net.derohimat.mvpandroid.di.components.DaggerActivityComponent;
+import net.derohimat.mvpandroid.di.modules.ActivityModule;
 
 public abstract class BaseActivity extends AppCompatActivity implements BaseMvpView {
 
@@ -31,8 +26,6 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseMvpV
                 .applicationComponent(((MvpAndroid) getApplication()).getApplicationComponent())
                 .activityModule(new ActivityModule(this))
                 .build();
-
-
     }
 
     public ActivityComponent getActivityComponent() {
@@ -51,7 +44,6 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseMvpV
     public void showError(@StringRes int error_message) {
         Snackbar.make(findViewById(android.R.id.content), getString(error_message), Snackbar.LENGTH_SHORT).show();
     }
-
 
     public abstract void setUpActivity();
 

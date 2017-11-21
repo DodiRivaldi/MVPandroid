@@ -1,21 +1,18 @@
-package derohimat.mvpandroid.data.datamanager;
+package net.derohimat.mvpandroid.data.datamanager;
 
 import android.content.Context;
+
+import net.derohimat.mvpandroid.data.datamanager.network.NetworkHelper;
+import net.derohimat.mvpandroid.data.datamanager.preference.PreferenceHelper;
+import net.derohimat.mvpandroid.data.model.TvModelResult;
+import net.derohimat.mvpandroid.data.model.TvShowDetail;
+import net.derohimat.mvpandroid.di.qualifiers.ApplicationContext;
+import net.derohimat.mvpandroid.di.scopes.ApplicationScope;
 
 import javax.inject.Inject;
 
 import io.reactivex.Observable;
-import derohimat.mvpandroid.data.datamanager.network.NetworkHelper;
-import derohimat.mvpandroid.data.datamanager.preference.PreferenceHelper;
-import derohimat.mvpandroid.data.model.TvModelResult;
-import derohimat.mvpandroid.data.model.TvShowDetail;
-import derohimat.mvpandroid.di.qualifiers.ApplicationContext;
-import derohimat.mvpandroid.di.scopes.ApplicationScope;
 import retrofit2.Response;
-
-/**
- * Created by mohak on 26/5/17.
- */
 
 @ApplicationScope
 public class AppDataManager implements DataManager {

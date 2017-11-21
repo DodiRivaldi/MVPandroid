@@ -1,18 +1,15 @@
-package derohimat.mvpandroid.di.modules;
+package net.derohimat.mvpandroid.di.modules;
+
+import net.derohimat.mvpandroid.data.datamanager.network.TvDbService;
+import net.derohimat.mvpandroid.di.qualifiers.Url;
+import net.derohimat.mvpandroid.di.scopes.ApplicationScope;
+import net.derohimat.mvpandroid.utils.Constants;
 
 import dagger.Module;
 import dagger.Provides;
-import derohimat.mvpandroid.data.datamanager.network.TvDbService;
-import derohimat.mvpandroid.di.qualifiers.Url;
-import derohimat.mvpandroid.di.scopes.ApplicationScope;
-import derohimat.mvpandroid.utils.Constants;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
-
-/**
- * Created by mohak on 19/5/17.
- */
 
 @Module
 public class NetworkModule {

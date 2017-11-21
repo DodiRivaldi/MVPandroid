@@ -1,18 +1,15 @@
-package derohimat.mvpandroid.data.datamanager.network;
+package net.derohimat.mvpandroid.data.datamanager.network;
+
+import net.derohimat.mvpandroid.data.model.TvModelResult;
+import net.derohimat.mvpandroid.data.model.TvShowDetail;
 
 import java.util.Map;
 
 import io.reactivex.Observable;
-import derohimat.mvpandroid.data.model.TvModelResult;
-import derohimat.mvpandroid.data.model.TvShowDetail;
 import retrofit2.Response;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.QueryMap;
-
-/**
- * Created by mohak on 25/5/17.
- */
 
 public interface TvDbService {
 

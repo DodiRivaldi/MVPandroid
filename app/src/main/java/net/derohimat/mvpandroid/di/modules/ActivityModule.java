@@ -1,37 +1,34 @@
-package derohimat.mvpandroid.di.modules;
+package net.derohimat.mvpandroid.di.modules;
 
 import android.app.Activity;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
+
+import net.derohimat.mvpandroid.data.model.TvModel;
+import net.derohimat.mvpandroid.di.qualifiers.ActivityContext;
+import net.derohimat.mvpandroid.di.scopes.ActivityScope;
+import net.derohimat.mvpandroid.ui.CommonFragmentAdapter;
+import net.derohimat.mvpandroid.ui.detail.DetailMvpPresenter;
+import net.derohimat.mvpandroid.ui.detail.DetailMvpView;
+import net.derohimat.mvpandroid.ui.detail.DetailPresenter;
+import net.derohimat.mvpandroid.ui.main.MainMvpPresenter;
+import net.derohimat.mvpandroid.ui.main.MainMvpView;
+import net.derohimat.mvpandroid.ui.main.MainPresenter;
+import net.derohimat.mvpandroid.ui.popularshows.PopularShowsMvpPresenter;
+import net.derohimat.mvpandroid.ui.popularshows.PopularShowsMvpView;
+import net.derohimat.mvpandroid.ui.popularshows.PopularShowsPresenter;
+import net.derohimat.mvpandroid.ui.signup.SignUpMvpPresenter;
+import net.derohimat.mvpandroid.ui.signup.SignUpMvpView;
+import net.derohimat.mvpandroid.ui.signup.SignUpPresenter;
+import net.derohimat.mvpandroid.ui.topratedshows.TopRatedShowsMvpPresenter;
+import net.derohimat.mvpandroid.ui.topratedshows.TopRatedShowsMvpView;
+import net.derohimat.mvpandroid.ui.topratedshows.TopRatedShowsPresenter;
 
 import java.util.ArrayList;
 
 import dagger.Module;
 import dagger.Provides;
 import io.reactivex.disposables.CompositeDisposable;
-import derohimat.mvpandroid.data.model.TvModel;
-import derohimat.mvpandroid.di.qualifiers.ActivityContext;
-import derohimat.mvpandroid.di.scopes.ActivityScope;
-import derohimat.mvpandroid.ui.CommonFragmentAdapter;
-import derohimat.mvpandroid.ui.detail.DetailMvpPresenter;
-import derohimat.mvpandroid.ui.detail.DetailMvpView;
-import derohimat.mvpandroid.ui.detail.DetailPresenter;
-import derohimat.mvpandroid.ui.main.MainMvpPresenter;
-import derohimat.mvpandroid.ui.main.MainMvpView;
-import derohimat.mvpandroid.ui.main.MainPresenter;
-import derohimat.mvpandroid.ui.popularshows.PopularShowsMvpPresenter;
-import derohimat.mvpandroid.ui.popularshows.PopularShowsMvpView;
-import derohimat.mvpandroid.ui.popularshows.PopularShowsPresenter;
-import derohimat.mvpandroid.ui.signup.SignUpMvpPresenter;
-import derohimat.mvpandroid.ui.signup.SignUpMvpView;
-import derohimat.mvpandroid.ui.signup.SignUpPresenter;
-import derohimat.mvpandroid.ui.topratedshows.TopRatedShowsMvpPresenter;
-import derohimat.mvpandroid.ui.topratedshows.TopRatedShowsMvpView;
-import derohimat.mvpandroid.ui.topratedshows.TopRatedShowsPresenter;
-
-/**
- * Created by mohak on 19/5/17.
- */
 
 @Module
 public class ActivityModule {

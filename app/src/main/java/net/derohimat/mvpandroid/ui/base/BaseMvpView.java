@@ -1,8 +1,4 @@
-package derohimat.mvpandroid.ui.base;
-
-/**
- * Created by mohak on 13/5/17.
- */
+package net.derohimat.mvpandroid.ui.base;
 
 import android.support.annotation.StringRes;
 
