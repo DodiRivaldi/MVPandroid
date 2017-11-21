@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
 
-    <include layout="@layout/toolbar" />
+    <include layout="@layout/toolbar"/>
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefresh"
@@ -32,7 +32,7 @@
                         android:layout_height="200dp"
                         android:padding="5dp"
                         android:scaleType="fitXY"
-                        android:transitionName="@string/transition" />
+                        android:transitionName="@string/transition"/>
 
                     <TextView
                         android:id="@+id/show_name"
@@ -42,7 +42,7 @@
                         android:drawableStart="@drawable/ic_title"
                         android:gravity="center_vertical"
                         android:padding="10dp"
-                        android:textColor="#fff" />
+                        android:textColor="#fff"/>
 
                     <TextView
                         android:id="@+id/rating"
@@ -53,14 +53,14 @@
                         android:drawableStart="@drawable/star"
                         android:gravity="center_vertical"
                         android:padding="10dp"
-                        android:textColor="#fff" />
+                        android:textColor="#fff"/>
 
                     <ProgressBar
                         android:id="@+id/progress_bar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:visibility="gone" />
+                        android:visibility="gone"/>
 
 
                 </RelativeLayout>
@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:padding="10dp"
                     android:textColor="#fff"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"/>
 
             </LinearLayout>
 

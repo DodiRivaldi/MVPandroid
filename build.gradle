@@ -3,9 +3,10 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.0.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -22,15 +23,15 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-ext{
+ext {
 
-    supportLibraryVersion = '25.3.1'
-    dagger2Version = '2.8'
-    rxjavaVersion='2.1.0'
+    supportLibraryVersion = '26.1.0'
+    dagger2Version = '2.13'
+    rxjavaVersion = '2.1.0'
     retrofitVersion = '2.3.0'
     picassoVersion = '2.5.2'
     butterknifeVersion = '8.6.0'
-    espressoVersion = '2.2.2'
+    espressoVersion = '3.0.1'
     junitVersion = '4.12'
-    runnerVersion = '0.5'
+    runnerVersion = '1.0.1'
 }
